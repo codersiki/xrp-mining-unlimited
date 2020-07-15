@@ -1,0 +1,13 @@
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  mining_deneme:
+    runs-on: ubuntu-latest
+    name: just docker job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Docker step
+        uses: ./
